@@ -1,0 +1,22 @@
+# ------------ Requerimientos del proyecto RAG -------------
+# API, cliente web, embeddings, índice FAISS y utilidades
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+
+streamlit==1.35.0          # interfaz gráfica
+
+langchain==0.2.0
+langchain-community==0.2.0
+langchain-huggingface==0.0.4
+
+sentence-transformers==2.7.0
+transformers==4.41.2
+torch==2.3.0               # CPU; instalar con CUDA si se dispone de GPU
+
+faiss-cpu==1.8.0           # para el índice vectorial
+tqdm==4.66.4               # barras de progreso
+
+beautifulsoup4==4.12.3     # parsing HTML para WebBaseLoader
+lxml==4.9.5                # parser rápido (opcional pero recomendado)
+
+requests==2.32.3           # usado por el cliente Streamlit
